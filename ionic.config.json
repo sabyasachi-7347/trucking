@@ -1,0 +1,7 @@
+{
+  "name": "trukker",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
