@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -6,8 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
+  username:any="";
+  password:any="";
+  constructor(public router:Router) {
+    
+   }
 
-  constructor() { }
+   goto(){
+    this.router.navigate(['tabs']);
+   }
 
   ngOnInit() {
   }
